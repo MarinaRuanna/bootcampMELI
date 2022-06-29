@@ -1,7 +1,7 @@
 package exer1Banco;
 
 import exer1Banco.models.Basico;
-import exer1Banco.models.Colaborador;
+import exer1Banco.models.Cobrador;
 import exer1Banco.models.Executivo;
 
 public class Banco {
@@ -12,7 +12,7 @@ public class Banco {
         b.consultarSaldo();
         b.saqueEmDinheiro();
 
-        Colaborador c = new Colaborador();
+        Cobrador c = new Cobrador();
         c.consultarSaldo();
         c.saqueEmDinheiro();
 

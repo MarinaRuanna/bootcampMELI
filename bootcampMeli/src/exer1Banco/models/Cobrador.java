@@ -4,7 +4,7 @@ package exer1Banco.models;
 import exer1Banco.utils.ConsultaSaldo;
 import exer1Banco.utils.SaqueEmDinheiro;
 
-public class Colaborador extends Clientes implements ConsultaSaldo, SaqueEmDinheiro {
+public class Cobrador extends Clientes implements ConsultaSaldo, SaqueEmDinheiro {
 
     @Override
     public void consultarSaldo() {
