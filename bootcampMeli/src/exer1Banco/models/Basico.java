@@ -13,14 +13,14 @@ public class Basico extends Clientes implements ConsultaSaldo, PagamentoServicos
     }
 
     @Override
-    public void saqueEmDinheiro() {
-        System.out.println("Saque realizado com sucesso");
-    }
-
-    @Override
     public void pagamentoservicos() {
         System.out.println("Pagamento realizado com sucesso");
 
+    }
+
+    @Override
+    public void saqueEmDinheiro() {
+        System.out.println("Saque realizado com sucesso");
     }
 
     @Override
