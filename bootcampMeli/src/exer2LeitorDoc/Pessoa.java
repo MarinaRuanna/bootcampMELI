@@ -1,11 +1,13 @@
 package exer2LeitorDoc;
+import java.util.List;
 
 public class Pessoa {
 
     String nome;
     int idade;
+    List<Habilidade> habilidades;
 
-    public Pessoa(String nome, int idade) {
+    public Pessoa(String nome, int idade, List<Habilidade> habilidades) {
         this.nome = nome;
         this.idade = idade;
     }
@@ -20,8 +22,8 @@ public class Pessoa {
 
     @Override
     public String toString() {
-        return "Pessoa{" +
-                "nome='" + nome + '\'' +
-                ", idade=" + idade + "habilidades = " + falaIngles() + ", " + programar();
+        return "nome = " + nome + "\n" +
+                "idade = " + idade + "\n" +
+                "habilidades = " + habilidades + "\n";
     }
 }

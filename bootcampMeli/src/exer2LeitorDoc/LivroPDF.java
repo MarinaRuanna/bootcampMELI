@@ -16,11 +16,10 @@ public class LivroPDF extends Documento {
 
     @Override
     public String toString() {
-        return "LivroPDF{" +
-                "numPag=" + numPag +
-                ", autor='" + autor + '\'' +
-                ", titulo='" + titulo + '\'' +
-                ", genero='" + genero + '\'' +
-                '}';
+        return "LivroPDF: "+ "\n" +
+                "Número de Páginas = " + numPag + "\n" +
+                "Autor = " + autor + "\n" +
+                "Título = " + titulo + "\n" +
+                "Gênero = " + genero + "\n";
     }
 }

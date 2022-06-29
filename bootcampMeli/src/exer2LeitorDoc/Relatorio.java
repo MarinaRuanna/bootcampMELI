@@ -16,9 +16,10 @@ public class Relatorio extends Documento {
 
     @Override
     public String toString() {
-        return "text = " + text + "\n" +
-                ", numPag = " + numPag +
-                ", autor = " + autor + '\n' +
-                ", revisor = " + revisor;
+        return "Relatório: " + "\n" +
+                "Texto = " + text + "\n" +
+                "Número de Páginas = " + numPag + "\n" +
+                "Autor = " + autor + "\n" +
+                "Revisor = " + revisor + "\n";
     }
 }

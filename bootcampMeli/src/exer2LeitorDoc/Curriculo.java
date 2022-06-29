@@ -10,6 +10,7 @@ public class Curriculo extends Documento{
 
     @Override
     public String toString() {
-        return pessoa.toString();
+        return "Curriculo: " + "\n" +
+                pessoa.toString();
     }
 }
