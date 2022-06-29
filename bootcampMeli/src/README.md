@@ -49,7 +49,7 @@ qualquer tipo de documento é passado e o conteudo é impresso.
 
 ### Exercicio 3:
 
-Solicita-se a criação de uma classe abstrata chamada Animal, da qual derivam 3 animais: **Cachorro**, **Gato** e **Vaca*. 
+Solicita-se a criação de uma classe abstrata chamada Animal, da qual derivam 3 animais: **Cachorro**, **Gato** e **Vaca**. 
 Os três animais são capazes de *"emitir sons"*, para isso será necessário implementar um método que permita visualizar 
 no console o som que cada animal emite. por exemplo, no caso do cachorro "Auau", do gto "Miau" e da vaca "Mu".
 
@@ -58,5 +58,5 @@ e a vaca herbívora), incluir interfaces necessárias para contemplar os método
 
 Feito isso, realize a criação de diferents animais e a invocação de suas respectivas implementações de métodos no Main.
 
-Como proposta extra, sugere-se criar um métod para comerAnimal onde, a partir da passagem de um objeto de qualquer tipo 
+Como proposta extra, sugere-se criar um método para comerAnimal onde, a partir da passagem de um objeto de qualquer tipo 
 de animal como parâmetro, chama o método comer de acordo com o referido animal.
