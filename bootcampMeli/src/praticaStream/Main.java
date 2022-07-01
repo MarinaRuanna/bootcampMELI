@@ -36,9 +36,7 @@ public class Main {
 
         Garagem garagem = new Garagem(1, listaVeiculos);
 
-        garagem.listaDecrescente();
-
-        listaVeiculos.stream().map(Veiculos::getPreco).sorted((v1, v2) -> Double.compare(v2, v1)).forEach(System.out::println);
-
+        garagem.carrosOrdemAlfabetica();
+        garagem.filtrarPrecos(1000d);
     }
 }

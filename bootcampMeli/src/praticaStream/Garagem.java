@@ -27,7 +27,7 @@ public class Garagem {
 
     @Override
     public String toString() {
-        return "id =" + id +
+        return "Garagem id : " + id + "\n" +
                 "listaVeiculos = " + listaVeiculos
                 ;
     }
@@ -35,16 +35,50 @@ public class Garagem {
     public void setListaVeiculos(List<Veiculos> listaVeiculos) {
         this.listaVeiculos = listaVeiculos;
     }
-    public void listaDecrescente() {
+    public void listaPrecoDecrescente() {
+        listaVeiculos.stream()
+                .sorted(Comparator.comparing(Veiculos::getPreco))
+                .forEach(System.out::println);
+
+    }
+    public void listaPrecoCrescente() {
         listaVeiculos.stream()
                 .sorted(Comparator.comparing(Veiculos::getPreco))
                 .forEach(System.out::println);
 
     }
 
-    public void listaDecrescenteV2() {
+    public void listarPorMarcas(){
         listaVeiculos.stream()
-                .sorted((v1,v2) -> Double.compare(v2.getPreco(), v1.getPreco()))
+                .sorted(Comparator.comparing(Veiculos::getMarca))
+                .forEach(System.out::println);
+
+    }
+
+    public void filtrarPrecos(Double valor){
+        listaVeiculos.stream()
+                .filter(Veiculos -> Veiculos.getPreco() < valor )
                 .forEach(System.out::println);
     }
+
+    public void precosDecrescente() {
+        listaVeiculos.stream().
+                map(Veiculos::getPreco).sorted((v1, v2) -> Double.compare(v2, v1))
+                .forEach(System.out::println);
+    }
+    public void precosCrescente() {
+        listaVeiculos.stream()
+                .map(Veiculos::getPreco)
+                .sorted(Double::compare)
+                .forEach(System.out::println);
+    }
+    public void carrosOrdemAlfabetica(){
+        listaVeiculos.stream()
+                .map((k) -> k.getModelo().concat(" " + k.getMarca()))
+                .sorted(String::compareTo)
+                .forEach(System.out::println);
+
+    }
+
+
 }
